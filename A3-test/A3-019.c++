@@ -13,13 +13,11 @@ int main() {
     for (int i = 1; i <= L; i++) {
         cin >> A[i];
     }
-    // สร้าง prefix maximum
     vector<long long> MAX(N + 1);
     MAX[1] = H[1];
     for (int i = 2; i <= N; i++) {
         MAX[i] = max(MAX[i - 1], H[i]);
     }
-    // ตอบคำถามลูกค้าแต่ละคน
     for (int i = 1; i <= L; i++) {
         int pos = A[i];
 
