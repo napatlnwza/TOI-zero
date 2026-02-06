@@ -26,7 +26,7 @@ int main() {
         discount=price * 0.03;
         price-=discount;
         price = floor(price * 100 +0.5) / 100;
-        cout << fixed << setprecision(2) << price;
+       cout << fixed << setprecision(2) << price;
         return 0;
     }
     cout << fixed << setprecision(2) << price;
